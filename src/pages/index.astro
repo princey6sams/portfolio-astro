@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import PrimaryLayout from '../layouts/PrimaryLayout.astro';
 const name = 'Prince';
 ---
 
-<Layout title="Welcome to Astro.">
+<PrimaryLayout someProps={"A simple Prop"} title="Welcome to Astro.">
 	<main>
 		<svg
 			class="astro-a"
@@ -62,7 +63,7 @@ const name = 'Prince';
 			/>
 		</ul>
 	</main>
-</Layout>
+</PrimaryLayout>
 
 <style>
 	main {
